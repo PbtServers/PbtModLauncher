@@ -16,7 +16,7 @@ import java.awt.event.KeyEvent;
 public class AboutDialog extends JDialog {
 
     public AboutDialog(Window parent) {
-        super(parent, "About", ModalityType.DOCUMENT_MODAL);
+        super(parent, "Sobre el Launcher", ModalityType.DOCUMENT_MODAL);
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         initComponents();
@@ -29,14 +29,14 @@ public class AboutDialog extends JDialog {
         JPanel container = new JPanel();
         container.setLayout(new MigLayout("insets dialog"));
 
-        container.add(new JLabel("<html>Licenciado Bajo GNU General Public License, Versión 3."), "wrap, gapbottom unrel");
-        container.add(new JLabel("<html>Estás Utilizando PbtModLauncher, de Código Abierto<br>" +
+        container.add(new JLabel("<html>Licenciado Bajo GNU General Public License, V3."), "wrap, gapbottom unrel");
+        container.add(new JLabel("<html>Estas Utilizando PbtModLauncher, de Codigo Abierto<br>" +
                 "El Launcher Oficial de ModPacks y PbtClient"), "wrap, gapbottom unrel");
-        container.add(new JLabel("<html>Página de GitHub con Créditos al Launcher:<br>" +
+        container.add(new JLabel("<html>Pagina de GitHub con Creditos al Launcher:<br>" +
                 " -->"), "wrap, gapbottom unrel");
 
         JButton okButton = new JButton("OK");
-        JButton sourceCodeButton = new JButton("Página Web");
+        JButton sourceCodeButton = new JButton("Github");
 
         container.add(sourceCodeButton, "span, split 3, sizegroup bttn");
         container.add(okButton, "tag ok, sizegroup bttn");
