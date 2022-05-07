@@ -16,9 +16,9 @@ plugins {
 
 println """
 *******************************************
- You are building SKCraft Launcher! 
+ Estás Compilando PbtModLauncher! 
 
- Output files will be in [subproject]/build/libs
+ Los Archivos se Generan en [subproject]/build/libs
 *******************************************
 """
 
